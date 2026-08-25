@@ -6,8 +6,28 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		3EFCFC6A303D7BD600EAB7B3 /* llama.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EFCFC69303D7BD600EAB7B3 /* llama.xcframework */; };
+		3EFCFC6B303D7BD600EAB7B3 /* llama.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3EFCFC69303D7BD600EAB7B3 /* llama.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3EFCFC6C303D7BD600EAB7B3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3EFCFC6B303D7BD600EAB7B3 /* llama.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		3EFCFC53303D749300EAB7B3 /* LucidLogicalMachineDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LucidLogicalMachineDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EFCFC69303D7BD600EAB7B3 /* llama.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = llama.xcframework; path = "../../llm/llama.cpp/build-apple/llama.xcframework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -23,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EFCFC6A303D7BD600EAB7B3 /* llama.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				3EFCFC55303D749300EAB7B3 /* LucidLogicalMachineDemo */,
+				3EFCFC68303D7BD600EAB7B3 /* Frameworks */,
 				3EFCFC54303D749300EAB7B3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +67,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		3EFCFC68303D7BD600EAB7B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3EFCFC69303D7BD600EAB7B3 /* llama.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -55,6 +85,7 @@
 				3EFCFC4F303D749300EAB7B3 /* Sources */,
 				3EFCFC50303D749300EAB7B3 /* Frameworks */,
 				3EFCFC51303D749300EAB7B3 /* Resources */,
+				3EFCFC6C303D7BD600EAB7B3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

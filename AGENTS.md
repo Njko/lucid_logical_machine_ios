@@ -31,4 +31,4 @@ xcodebuild -project LucidLogicalMachineDemo.xcodeproj \
 
 There is currently no XCTest target or lint configuration. Use `MOCK_LLM` for fast UI validation without downloading a model. For real inference, use a valid `.gguf` in `Documents/Models` and keep checksum validation enabled.
 
-On the simulator, keep `n_gpu_layers = 0`; physical devices may enable GPU layers. Preserve the Llama 3.2 chat template, EOS/EOT stopping, the 2,048-token context, and the dynamic 256-token output budget unless the behavior is intentionally being changed.
+On the simulator, keep `n_gpu_layers = 0`; physical devices may enable GPU layers. Preserve the Llama 3.2 chat template, EOS/EOT stopping, the 4,096-token context, and the dynamic 256-token output budget unless the behavior is intentionally being changed.

@@ -9,7 +9,7 @@ import Foundation
 import llama
 
 final class LlamaCppService: LLMService, @unchecked Sendable {
-    private let contextLength = 2_048
+    private let contextLength = 4_096
     private let maxGeneratedTokens = 256
     private let contextSafetyMargin = 32
     private let systemPrompt = """

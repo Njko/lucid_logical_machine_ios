@@ -112,7 +112,7 @@ struct ChatView: View {
 
             ContextWindowView(
                 usedTokens: viewModel.contextTokensUsed,
-                capacity: 2_048,
+                capacity: 4_096,
                 tokensPerSecond: viewModel.contextTokensPerSecond
             )
 

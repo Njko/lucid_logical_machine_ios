@@ -36,11 +36,11 @@ SwiftUI ChatView
       -> LlamaCppService or MockLLMService
 ```
 
-`LlamaCppService` owns the native model/context/sampler lifecycle and streams generated fragments. `ModelStore` handles model discovery, download, temporary files, and integrity checks. `PromptGuard` rejects prompts that exceed the small model’s budget or require unavailable tools/current information. The UI displays an estimated 2,048-token context window.
+`LlamaCppService` owns the native model/context/sampler lifecycle and streams generated fragments. `ModelStore` handles model discovery, download, temporary files, and integrity checks. `PromptGuard` rejects prompts that exceed the small model’s budget or require unavailable tools/current information. The UI displays an estimated 4,096-token context window.
 
 ## Limitations
 
-- The demo uses a 2,048-token context and a dynamic maximum of 256 generated tokens.
+- The demo uses a 4,096-token context and a dynamic maximum of 256 generated tokens.
 - The context gauge is an estimate based on message text.
 - Simulator inference uses CPU layers because simulator Metal does not support the required residency sets.
 - The current instruct prompt supports concise answers but is not a substitute for factual verification.

@@ -38,7 +38,7 @@ final class ChatViewModel: ObservableObject {
     private var generationTask: Task<Void, Never>?
     private var generationID: UUID?
     private var modelLoaded = false
-    private let contextCapacity = 2_048
+    private let contextCapacity = 4_096
     private var generationStartedAt: Date?
     private var generationStartTokens = 0
 

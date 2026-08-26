@@ -45,7 +45,7 @@ struct ChatView: View {
                 }
 
             VStack(alignment: .leading, spacing: 2) {
-                Text("Local LLM")
+                Text("Lucid Logical Machine")
                     .font(ChatTheme.title(18))
                     .foregroundStyle(ChatTheme.text)
                 Label("Runs fully on-device", systemImage: "lock.fill")
